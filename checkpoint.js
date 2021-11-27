@@ -32,7 +32,7 @@ function mismaCantidadCaracteres(strings, caracteres) {
   // mismaCantidadCaracteres(['javascript', 'pedro', 'amigo', 'parque'], 5) debe retornar ['pedro', 'amigo']
 
   // Tu código aca:
-
+return strings.filter(e => e.length === caracteres);
 }
 
 function sumaTodosPrimos(array) {
