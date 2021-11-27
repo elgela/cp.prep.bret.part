@@ -44,7 +44,7 @@ function sumaTodosPrimos(array) {
   // sumaTodosPrimos([1, 5, 2, 9, 3, 4, 11]) devuelve 5 + 2 + 3 + 11 = 21
   // Nota: Podes usar la funcion 'esPrimo' resuelta en la homework JSII.
 
-  // Tu código aca:
+  // Tu código aca: 
 
 }
 
