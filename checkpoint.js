@@ -75,7 +75,15 @@ function sumArray(array, n) {
   // por lo tanto también debería devolver false en este caso
 
   // Tu código aca:
-
+  for (var i = 0; i < array.length; i++) {
+    var a = array[i];
+    for (var j = 0; j < array.length; j++) {
+      if (i === j) continue;
+      var b = array[j];
+      if (a + b === n) return true;
+    }
+  }
+  return false;
 };
 
 function agregaPropiedad(amigos, propiedad) {
