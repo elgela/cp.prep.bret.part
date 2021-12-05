@@ -108,7 +108,10 @@ function crearClaseViajero() {
       // Inicializar las propiedades del viajero con los valores recibidos como argumento
 
       // Tu código aca:
-
+      this.nombre = nombre;
+      this.edad = edad;
+      this.paises = paises;
+      this.compañeros = compañeros
     }
 
     addCompañero(nombre, nacionalidad, edad) {
