@@ -96,7 +96,13 @@ function agregaPropiedad(amigos, propiedad) {
   // Ej:
   // var amigos = [{ nombre: 'toni' } , { nombre: 'Emi', edad: 25 }];
   // agregaPropiedad(amigos, 'edad') debe devolver [{ nombre: 'toni', edad: null } , { nombre: 'Emi', edad: 25 }]
-
+  amigos.forEach(amigo => {
+    if (!amigo.hasOwnProperty(propiedad)) {
+      amigo[propiedad] = null; 
+    }
+  });
+  
+  return amigos;
 }
 
 // =======================================================================
@@ -121,7 +127,8 @@ function crearClaseViajero() {
       // No debe retornar nada.
 
       // Tu código aca:
-
+      var compañeros = {nombre, nacionalidad, edad}
+      this.compañeros.push(compañeros)
     }
 
     addPais(pais) {
@@ -129,7 +136,7 @@ function crearClaseViajero() {
       // No debe retornar nada.
 
       // Tu código aca:
-
+      this.paises.push(pais); 
     }
 
     getCompañeros() {
@@ -140,7 +147,7 @@ function crearClaseViajero() {
       // viajero.getCompañeros() debería devolver ['John', 'Peter']
 
       // Tu código aca:
-      
+     
     }
 
     getPaises() {
