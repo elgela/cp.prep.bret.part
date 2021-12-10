@@ -156,7 +156,7 @@ function crearClaseViajero() {
       // viajero.getPaises() debe devolver ['Belgica', 'Estados Unidos', 'Islandia']
 
       // Tu código aca:
-      
+      return this.paises;
     }
 
     getPromedioEdad() {
